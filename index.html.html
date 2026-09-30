@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Estructura con Columnas</title>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+        }
+
+        /* Estilo para controlar el tamaño fijo del logotipo pequeño */
+        .logo-pequeno {
+            width: 200px;
+            /* Ajusta el tamaño que desees */
+            height: auto;
+            display: block;
+        }
+
+        .promocion-delsitio {
+            width: 250px;
+            /* Ajusta el tamaño que desees */
+            height: auto;
+            display: block;
+        }
+
+        .articulo-principal{
+            width: 250px;
+            /* Ajusta el tamaño que desees */
+            height: auto;
+            display: block;
+        }
+        /* Estilo para que la imagen de la cabecera sea responsiva y no se desborde */
+
+
+        .logo-cabecera {
+            .barra-navegacion{
+                display: flex;
+                gap: 15px;
+                margin-top: 10px;
+            }
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+            /* Espacio entre la imagen y el título */
+        }
+
+        .boton-nav{
+            text-decoration: none;
+            color: aquamarine;
+            background-color: beige;
+            padding: 6px 12px;
+            border: radius 4px;
+            font-size: 14px;
+            font-family: sans-serif;
+            transition: background-color 0.3s;
+
+            .boton-nav:hover{
+                background-color: bisque(245, 148, 1);
+                color: beige;
+            }
+
+            .boton-nav.activo{
+                background-color: blanchedalmond;
+                color: beige;
+                font-weight: bold;
+
+            }
+        }
+        main {
+            display: flex;
+            gap: 20px;
+
+        }
+
+        aside {
+            width: 25%;
+
+            background-color: #f0f0f0;
+            padding: 15px;
+        }
+
+
+        section {
+            width: 75%;
+            background-color: #e0f7fa;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1 style="margin: 0;">Mi Sitio Web</h1>
+            <nav>Menú de navegación</nav>
+            <a href="archivo1.html" class="boton-nav action">inicio</a>
+            <a href="archivo2.html" class="boton-nav action">servicio</a>
+            <a href="archivo3.html" class="boton-nav action">contacto</a>
+        </div>
+        <img src="imagenes/blanca.jpg" alt="Logo de Mi Sitio Web" class="logo-pequeno">
+    </header>
+    <main>
+        <aside>
+            <h3>Barra Lateral</h3>
+            <img src="imagenes/jugo.jpg" alt="promocion" class="promocion-delsitio">
+            <p>Jumex vida, tienes que probar su sabor dulce  de mora azul.</p>
+        </aside>
+        <section>
+            <article>
+                <h2>Artículo Principal</h2>
+                 <img src="imagenes/articulo.jpg" alt="articulo principal." class="articulo-principal">
+                <p>Las mariposas en su etapa joven son orugas y de orugas trancisionan a mariposas, es algo muy bonito.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Pie de página</p>
+    </footer>
+
+</body>
+
+</html>
